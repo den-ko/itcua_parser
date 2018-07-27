@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <BorderPane layoutX="300.0" layoutY="200.0" prefHeight="600.0" prefWidth="800.0" styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <GridPane alignment="TOP_CENTER" prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                     <image>
+                        <Image url="@itclogo.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" stylesheets="@itcstyle_button.css">
+                     <children>
+                        <Button fx:id="btnMain" maxWidth="-Infinity" mnemonicParsing="false" styleClass="navmenu" text="Главная" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnNews" maxWidth="-Infinity" mnemonicParsing="false" styleClass="navmenu" text="Новости" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnArticles" contentDisplay="CENTER" maxWidth="-Infinity" mnemonicParsing="false" styleClass="navmenu" text="Обзоры" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <MenuButton fx:id="menuBtnCategory" maxWidth="-Infinity" mnemonicParsing="false" styleClass="bookmarks" stylesheets="@itcstyle_menubutton.css" text="Категории" textFill="WHITE">
+                           <items>
+                              <MenuItem fx:id="notebookCategory" mnemonicParsing="false" text="Ноутбуки" />
+                              <MenuItem fx:id="smartfonCategory" mnemonicParsing="false" text="Смартфоны" />
+                           </items>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" GridPane.halignment="RIGHT">
+                     <children>
+                        <MenuButton fx:id="menuBtnBookmarks" focusTraversable="false" maxWidth="-Infinity" mnemonicParsing="false" styleClass="bookmarks" stylesheets="@itcstyle_menubutton.css" text="Закладки" textFill="WHITE" visible="false">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Закладка" />
+                              <Menu mnemonicParsing="false" text="Папка">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Закладка" />
+                                </items>
+                              </Menu>
+                          </items>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </MenuButton>
+                        <Button focusTraversable="false" mnemonicParsing="false" styleClass="btn-img" stylesheets="@itcstyle_button.css">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@settings.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" maxHeight="-Infinity" stylesheets="@itcstyle_button.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnPrev" disable="true" focusTraversable="false" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="200.0" styleClass="navnews" text="&lt; Назад">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnNext" focusTraversable="false" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="200.0" styleClass="navnews" text="Вперед &gt;">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+         <center>
+            <ListView fx:id="listView" focusTraversable="false" stylesheets="@itcstyle_news.css" BorderPane.alignment="TOP_CENTER">
+               <BorderPane.margin>
+                  <Insets left="100.0" right="18.0" />
+               </BorderPane.margin>
+            </ListView>
+         </center>
+         <right>
+            <VBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnUp" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" styleClass="btn-up" stylesheets="@itcstyle_button.css" visible="false">
+                     <graphic>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@back_to_top.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets right="18.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <VBox alignment="TOP_CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

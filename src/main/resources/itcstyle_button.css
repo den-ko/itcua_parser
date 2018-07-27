@@ -1,0 +1,41 @@
+.navmenu,.btn-img {
+    -fx-background-radius: 2;
+    -fx-background-color: #191718;
+	-fx-font-size: 14;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.navmenu:hover,.btn-img:hover {
+    -fx-background-color: #0096C9;
+}
+
+.navmenu:focused,.btn-img:focused {
+	-fx-background-color: #0096C9;
+	-fx-text-fill: #191718;
+}
+
+.navmenu:disabled,.btn-img:disabled, .navmenu:default:disabled,.btn-img:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.navnews {
+	-fx-background-radius: 2;
+    -fx-background-color: afafaf;
+	-fx-font-size: 20;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.btn-up {
+    -fx-background-color: transparent;
+}
+
+.btn-up:pressed, .btn-up:default:hover:pressed {
+    -fx-background-color: #0096C9;
+}
+
+.navnews:hover,.btn-up:hover,.btn-up:focused,.navnews:focused {
+	-fx-background-color: #d7d7d7;
+	-fx-text-fill: #f7f7f7;
+}

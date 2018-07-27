@@ -1,0 +1,38 @@
+.menu-item .label{
+     -fx-font-size: 14;
+	 -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	 -fx-text-fill: white;
+}
+
+.menu-item:focused {
+     -fx-background-color: #0096C9;
+	 -fx-background-radius: 2;
+}
+
+.context-menu {
+    -fx-background-color: #191718;
+}
+
+.bookmarks {
+    -fx-background-radius: 2;
+    -fx-background-color: #191718;
+	-fx-font-size: 14;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.bookmarks:hover {
+    -fx-background-color: #0096C9;
+}
+
+.bookmarks:pressed, .bookmarks:default:hover:pressed {
+	-fx-background-color: #0096C9;
+}
+
+.bookmarks:focused {
+	-fx-background-color: #0096C9;
+}
+
+.bookmarks:disabled, .bookmarks:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+}
